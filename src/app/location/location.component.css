@@ -1,0 +1,9 @@
+.location{
+  background-color: #2C3E50;
+}
+.social-icons i{
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}

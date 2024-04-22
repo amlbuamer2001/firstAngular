@@ -1,0 +1,21 @@
+<nav [ngClass]="{'py-2':isScrolled}" class="navbar sticky-top navbar-expand-lg paddingNav">
+    <div class="container">
+      <a class="navbar-brand fw-bolder text-white fs-2" href="#">START FRAMEWORK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link rounded-3 text-white fw-bold mx-3" aria-current="page" routerLink="about" routerLinkActive="active">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white rounded-3 fw-bold mx-3" routerLink="portfolio" routerLinkActive="active">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-3 text-white fw-bold" routerLink="contact" routerLinkActive="active">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

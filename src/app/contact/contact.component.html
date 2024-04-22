@@ -1,0 +1,33 @@
+<div class="contact h-100 text-white ">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="text-center mt-4 fw-bolder fs-1 main-color">CONTACT SECTION</h2>
+    </div>
+    <div class="shapes d-flex justify-content-center align-items-center mt-3 mb-3">
+      <div class="before-star me-3"></div>
+      <i class="fa-solid fa-star main-color"></i>
+      <div class="after-star ms-3"></div>
+    </div>
+
+    <form class="w-75 my-4 py-3 mx-auto">
+      <div class="mb-2">
+        <label class="position-relative top-0" [class.__top]="!userName.length" for="userName">userName:</label>
+        <input class="form-control p-3 border-0 border-bottom position-relative" [(ngModel)]="userName" type="text" name="userName" id="userName" placeholder="userName">
+      </div>
+      <div class="mb-2">
+        <label class="position-relative top-0" [class.__top]="!userAge.length" for="userAge">userAge:</label>
+        <input class="form-control p-3 border-0 border-bottom position-relative" [(ngModel)]="userAge" type="text" name="userAge" id="userAge" placeholder="userAge">
+      </div>
+      <div class="mb-2">
+        <label class="position-relative top-0" [class.__top]="!userEmail.length" for="userEmail">userEmail:</label>
+        <input class="form-control p-3 border-0 border-bottom position-relative" [(ngModel)]="userEmail" type="email" name="userEmail" id="userEmail" placeholder="userEmail">
+      </div>
+      <div class="mb-2">
+        <label class="position-relative top-0" [class.__top]="!userPassword.length" for="userPassword">userPassword:</label>
+        <input class="form-control p-3 border-0 border-bottom position-relative" [(ngModel)]="userPassword" type="text" name="userPassword" id="userPassword" placeholder="userPassword">
+      </div>
+      <button class="btn text-white mt-4">send Message</button>
+    </form>
+
+  </div>
+</div>

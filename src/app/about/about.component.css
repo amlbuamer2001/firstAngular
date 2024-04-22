@@ -1,0 +1,14 @@
+.about{
+  background-color: #1ABC9C;
+}
+.container{
+  width: 75%;
+
+}
+.vh-100{
+  height: 80vh !important;
+}
+.before-star,.after-star{
+  width: 80px;
+  height: 4px;
+}

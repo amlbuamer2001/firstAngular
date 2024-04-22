@@ -1,0 +1,29 @@
+<div class="portfolio mb-5 min-vh-100">
+  <div class="container ">
+    <div class="home-content text-center">
+      <h2 class="text-center mt-5 fw-bolder fs-1">PORTFOLIO COMPONENTT</h2>
+    </div>
+    <div class="shapes d-flex justify-content-center align-items-center mt-3 mb-3">
+      <div class="before-star me-3"></div>
+      <i class="fa-solid fa-star"></i>
+      <div class="after-star ms-3"></div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-4" *ngFor="let src of srcs">
+        <div class="position-relative">
+          <img [src]="src" alt="" class="w-100 rounded ">
+          <div (click)="flag=false; imgModel=src" class="layer position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus fa-8x text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div (click)="hideModel($event.target,img)" [class.d-none]="flag" class="model position-fixed start-0 top-0 w-100 h-100 bg-black bg-opacity-25 d-flex justify-content-center align-items-center">
+    <img #img [src]="imgModel" alt="">
+  </div>
+</div>

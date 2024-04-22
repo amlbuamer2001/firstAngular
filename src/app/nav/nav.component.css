@@ -1,0 +1,10 @@
+.navbar{
+    background-color:#2C3E50;
+    transition: all 0.3s;
+}
+.active{
+  background-color: #1ABC9C;
+}
+.paddingNav {
+  padding-block: 1.5625rem;
+}
